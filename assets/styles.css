@@ -74,7 +74,6 @@ article p {
 footer {
     text-align: center;
     color: rgb(234, 49, 234);
-    font-size: 20px;
 }
 
 @media screen and (max-width: 1000px) {
