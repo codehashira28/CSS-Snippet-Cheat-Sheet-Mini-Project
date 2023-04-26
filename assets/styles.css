@@ -17,16 +17,17 @@ article p {
 
 .card-row {
     display: flex;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .card-row div {
     border: 2px dashed white;
     width: 30%;
-    margin-right: 20px;
     position: relative;
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 50px;
 }
 
 .card-row h2 {
@@ -54,7 +55,7 @@ article p {
         rgb(168, 94, 157)
     );
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 14px;
     padding: 20px 0;
 }
 
@@ -69,3 +70,21 @@ article p {
 .overlay {
     padding: 80px 0;
 }
+
+footer {
+    text-align: center;
+    color: rgb(234, 49, 234);
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .card-row div {
+        width: 45%;
+    }
+  }
+
+@media screen and (max-width: 576px) {
+    .card-row div {
+        width: 100%;
+    }
+  }
